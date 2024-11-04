@@ -1,5 +1,7 @@
 FROM library/node:lts-bookworm
 
+EXPOSE "4200"
+
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update \
     && apt install -y --no-install-recommends sudo \
